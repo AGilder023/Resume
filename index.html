@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 </head>
 
 <i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
@@ -37,6 +68,8 @@
     class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i>
 
 <body>
+    
+
 
     <header>
         <nav>
@@ -49,8 +82,19 @@
             </ul>
         </nav>
     </header>
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="mepic.jpg" alt="" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Adrian M Gilder</h3> 
+      <p><i class="far fa-smile"></i><i class="fas fa-laptop-code"></i>Coder and Athlete<i class="fas fa-laptop-code"></i><i class="far fa-smile"></i></p> 
+      <h1><i class="fas fa-arrow-down"></i>Hover Over Me<i class="fas fa-arrow-down"></i></h1>
+    </div>
+  </div>
+</div>
     <article>
-        <h1>Adrian M Gilder</h1>
         <h2>Personal Profile:</h2>
         <p> Hardworking, patient first year Coding student who is able to work under pressure and mechanically
             inclined. </p>
@@ -82,11 +126,21 @@
 
         <h2> Extracurricular Activities:</h2>
         <p> 6/2017-12/2017</p>
-        <p> Member since 2017, We bowled for scholarship money and in tournaments. I learned to take my time. I've won
-            2 awards for high game series and score.</p>
+        <p> Member since 2017, We bowled for scholarship money and in tournaments. <p> I learned to take my time.</p><p> I've won 2 awards for high game series and score.</p>
 
 
     </article>
+    <h1>Smooth Scroll</h1>
+
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
 </body>
 
 <footer>
