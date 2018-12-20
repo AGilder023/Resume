@@ -8,33 +8,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
 
-<i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i
-    class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i><i class="rain"></i>
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 <body>
 
@@ -49,46 +48,85 @@
             </ul>
         </nav>
     </header>
+    <h1><i class="fas fa-arrow-down"></i>Hover Over Me<i class="fas fa-arrow-down"></i></h1>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="mepic.jpg" alt="" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <img src="images.jpeg" alt="" style="width:300px;height:300px;">
+
+                <div class="container">
+                    <div class="centered">
+                        <br>
+                        <h2>Adrian M. Gilder</h2>
+                        <p>Coder and Athlete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main" id="section1">
+        <h2>About Me</h2>
+        <a id="his" href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+    </div>
     <article>
-        <h1>Adrian M Gilder</h1>
         <h2>Personal Profile:</h2>
         <p> Hardworking, patient first year Coding student who is able to work under pressure and mechanically
             inclined. </p>
+        <br>
         <p> Seeking the position of Coding. </p>
-
+        <br>
         <h2>Knowledge, Skills, and Abilities:</h2>
         <p> - Complex Problem Solving </p>
+        <br>
         <p> — Identifying complex problems and reviewing related information to develop and
             evaluate options and implement solutions. </p>
+        <br>
         <p> - Programming — Writing computer programs for various purposes. </p>
+        <br>
         <p> - Reading Comprehension — Understanding written sentences and paragraphs in work related documents.</p>
+        <br>
         <p> - Active Learning </p>
+        <br>
         <p> — Understanding the implications of new information for both current and future
             problem-solving and decision-making.</p>
+        <br>
         <p> - Critical Thinking </p>
+        <br>
         <p> — Using logic and reasoning to identify the strengths and weaknesses of alternative
             solutions, conclusions or approaches to problems.</p>
+        <br>
         <h2>Education:</h2>
         <p> Apollo High School Glendale, AZ Expected Grad Date: May 2020</p>
+        <br>
         <p> West-MEC Coding Program GPA: 4 </p>
+        <br>
         <p> Relevant Coursework: Physical Education</p>
-
+        <br>
         <h2> Employment / Volunteer Activities: </h2>
         <p> New Ways Rims And Tires Phoenix, AZ July 2018</p>
+        <br>
         <p> Mechanic</p>
+        <br>
         <p> Responsibilities include: Assisting customers, and Tire changing. </p>
-
-
-
+        <br>
         <h2> Extracurricular Activities:</h2>
         <p> 6/2017-12/2017</p>
-        <p> Member since 2017, We bowled for scholarship money and in tournaments. I learned to take my time. I've won
-            2 awards for high game series and score.</p>
-
-
+        <br>
+        <p> Member since 2017, We bowled for scholarship money and in tournaments.</p>
+        <br>
+        <p> I learned to take my time.</p>
+        <br>
+        <p> I've won 2 awards for high game series and score.</p>
     </article>
-</body>
 
+    <div class="main" id="section2">
+        <h2>Section 2</h2>
+        <a id="hi" href="#section1">Click Me To Go To The Top</a>
+    </div>
+</body>
 <footer>
     &#9824; Adrian Gilder &#9824; <a href="mailto:adrianmartellgilder@gmail.com">adrianmartellgilder@gmail.com</a>
     &#9824; <a href=""><i class="fab fa-facebook-f"></i></a>
