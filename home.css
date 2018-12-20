@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+h2 {
+    font-family: 'Charm', cursive;
+}
+
+article p {
+    font-family: 'Staatliches', cursive;
+}
+
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -140,4 +148,12 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     padding: 20px;
+}
+
+button#his {
+    color: black;
+}
+
+button#hi {
+    color: black;
 }
