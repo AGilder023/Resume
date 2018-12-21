@@ -90,7 +90,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: gray;
+    background-color: #3497D2;
     border-radius: 15px 15px 15px 15px;
     text-align: center;
 }
@@ -112,7 +112,7 @@ i {
 }
 
 footer {
-    background-color: gray;
+    background-color: #3497D2;
     border-radius: 15px 15px 15px 15px;
     padding: 14px 16px;
     text-align: center;
@@ -137,21 +137,21 @@ p {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 img {
-      border-radius: 50%;
+    border-radius: 50%;
 }
 
 body {
     background-color: gray;
-    /* height: 100%; */
-    /* overflow: hidden; */
+    background-image: url(Water_texture_1400868_Nevit.jpg);
     position: relative;
     display: block;
     margin-left: 200px;
     margin-right: 200px;
     padding: 20px;
+    background-attachment: 100% 100%;
 }
 
 button#hi {
